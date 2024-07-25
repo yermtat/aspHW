@@ -42,12 +42,13 @@ app.MapGet("/GetTask/{id}", async (TasksDbContext db, int id) =>
 })
  .WithName("GetTaskById").WithOpenApi();
 
-app.MapPatch("/EditTask/{id}", async (TasksDbContext db, int id, string name, DateOnly due, bool isDone) =>
+app.MapPatch("/EditTask/{id}", async (TasksDbContext db, int id,DateTime due, string name = default,  bool isDone = default) =>
 {
     var task = await db.ToDoTasks.FindAsync(id);
     task.Due = due;
-    task.Name = name;
-    task.IsDone = isDone;
+    if (!String.IsNullOrEmpty(name)) task.Name = name;
+    if (isDone != default) task.IsDone = isDone;
+    await db.SaveChangesAsync();
     return Results.Accepted($"/GetAllTasks");
 })
 .WithName("EditTask")

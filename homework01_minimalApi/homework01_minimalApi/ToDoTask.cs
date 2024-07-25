@@ -11,5 +11,5 @@ public partial class ToDoTask
 
     public bool IsDone { get; set; }
 
-    public DateOnly Due { get; set; }
+    public DateTime Due { get; set; }
 }
