@@ -1,0 +1,80 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body class="bg-black">
+    <div class="container">
+    <div class="jumbotron ">
+        <div class="d-flex pt-5 align-content-center">
+            <div class="m-5 p-5">
+                <h1 class="display-1 text-light">Hello, I'm Tatyana</h1>
+                <h3 class=" text-light-50">Software developer</h3>
+            </div>
+            <div class="m-5 p-5">
+                        <img class="img-fluid rounded-circle " src="https://media.istockphoto.com/id/1306190794/vector/programmer-girl-working-on-the-laptop-programming-and-engineering-concept.jpg?s=612x612&w=0&k=20&c=SgBoKGaZRVOQRcKSR_ZRo46EQLlEEN_Jkq6NSd8d3H0=" />
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-evenly w-25 m-5">
+
+                <a href="https://github.com/yermtat" class="link-light">
+                    <span class="bg-black border border-light p-2 rounded">Get My Resume</span>
+                </a>
+
+                <a href="https://github.com/yermtat">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+        </div>
+    </div>
+
+    <div class="m-5">
+        <div class="m-1">
+            <h1 class="text-center">My services</h1>
+        </div>
+            <div class="card-deck d-flex justify-content-around">
+                <div class="card m-2 bg-dark border border-white w-25 h-25">
+                    <div class="card-body text-white">
+                        <h4 class="card-title text-center">Frontend</h4>
+                        <ul>
+                            <li><p>HTML/CSS</p></li>
+                        </ul>
+                        <ul>
+                            <li><p>JavaScript</p></li>
+                        </ul>
+                        <ul>
+                            <li><p>React</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card m-2 bg-dark border border-white w-25 h-25">
+                    <div class="card-body text-white">
+                        <h4 class="card-title text-center">Backend</h4>
+                        <ul>
+                            <li><p>Database management and SQL</p></li>
+                        </ul>
+                        <ul>
+                            <li><p>API development</p></li>
+                        </ul>
+                        <ul>
+                            <li><p>API integration</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <div class="m-5">
+            <div class="m-1">
+                <h1>Contacts</h1>
+            </div>
+            <div>
+                <p>+888005553535</p>
+                <p>yerm.tat@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</body>
